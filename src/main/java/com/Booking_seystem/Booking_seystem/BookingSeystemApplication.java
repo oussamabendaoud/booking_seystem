@@ -3,6 +3,12 @@ package com.Booking_seystem.Booking_seystem;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * 
+ */
+/**
+ * 
+ */
 @SpringBootApplication
 public class BookingSeystemApplication {
 
@@ -10,4 +16,3 @@ public class BookingSeystemApplication {
 		SpringApplication.run(BookingSeystemApplication.class, args);
 	}
 }
-
