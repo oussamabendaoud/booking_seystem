@@ -1,8 +1,8 @@
-package com.Booking_seystem.Booking_seystem.service;
+package com.Booking_seystem.Booking_seystem.service.Iservice;
 
 import java.util.List;
 
-import com.Booking_seystem.Booking_seystem.dao.Utilisateur;
+import com.Booking_seystem.Booking_seystem.dao.entities.Utilisateur;
 
 public interface IGestionUtilisateur {
     void ajouterUtilisateur(Utilisateur utilisateur);

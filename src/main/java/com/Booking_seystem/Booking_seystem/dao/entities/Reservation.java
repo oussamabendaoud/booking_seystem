@@ -1,4 +1,4 @@
-package com.Booking_seystem.Booking_seystem.dao;
+package com.Booking_seystem.Booking_seystem.dao.entities;
 
 import java.time.LocalDate;
 import java.util.Objects;
@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Reservation {
+public class Reservation{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_reservation;

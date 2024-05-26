@@ -1,4 +1,4 @@
-package com.Booking_seystem.Booking_seystem.dao;
+package com.Booking_seystem.Booking_seystem.dao.entities;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

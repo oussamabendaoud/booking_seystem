@@ -1,8 +1,8 @@
-package com.Booking_seystem.Booking_seystem.service;
+package com.Booking_seystem.Booking_seystem.service.Iservice;
 
 import java.util.List;
 
-import com.Booking_seystem.Booking_seystem.dao.ConfirmationRappel;
+import com.Booking_seystem.Booking_seystem.dao.entities.ConfirmationRappel;
 
 public interface IGestionConfirmationRappel {
     void ajouterConfirmationRappel(ConfirmationRappel confirmationRappel);
