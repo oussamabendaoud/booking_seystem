@@ -58,5 +58,11 @@ public class MyController {
         return "CRUD_Room";
     }
     
+    @GetMapping("/admin")
+    public String admin(Model model) {
+        model.addAttribute("title", "admin Page");
+        return "index";
+    }
+    
 
 }

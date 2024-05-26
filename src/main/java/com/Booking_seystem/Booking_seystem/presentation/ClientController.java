@@ -101,5 +101,8 @@ public class ClientController {
 		sc.suppCl(id);
 		return "redirect:/listerCl";
 	}
+	
+	
+	
 
 }
