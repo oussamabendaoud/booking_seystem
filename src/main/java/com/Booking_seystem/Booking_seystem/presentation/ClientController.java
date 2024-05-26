@@ -35,19 +35,20 @@ public class ClientController {
 	private final IServiceClient sc;
 
 
-	
-
 	@GetMapping("/listerCl")
-	public String getListCl(Model model,@RequestParam(defaultValue = "0") int numPage) {
-		Page<Client>list = sc.listerCl(numPage);
-		int pageCourante=numPage;
-		int totalPages=list.getTotalPages();
-		model.addAttribute("listCl",list);
-		model.addAttribute("pageCourante", pageCourante);
-		model.addAttribute("totalPages", totalPages);
-		return "index";
-
+	public String getListCl(Model model, @RequestParam(defaultValue = "0") int numPage) {
+	    Page<Client> list = sc.listerCl(numPage);
+	    int pageCourante = numPage;
+	    int totalPages = list.getTotalPages();
+	    //int nextPage = (pageCourante + 1 < totalPages) ? pageCourante + 1 : pageCourante;
+	    model.addAttribute("listCl", list);
+	    model.addAttribute("pageCourante", pageCourante);
+	    model.addAttribute("totalPages", totalPages);
+	    //model.addAttribute("nextPage", nextPage);
+	    return "index";
 	}
+	
+	
 	@GetMapping("/formAdd")
 	public String getFormAdd(Model model) {
 		model.addAttribute("client", new Client());
